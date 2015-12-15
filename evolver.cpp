@@ -76,7 +76,7 @@ void evolver::select_best()
 	bmse = genome[0]->mse;
 	for (int i = 1; i < num_population; i++)
 	{
-		if (genome[i]->fitness < bfit)
+		if (genome[i]->fitness > bfit)
 		{
 			bfit = genome[i]->fitness;
 			bmse = genome[i]->mse;
